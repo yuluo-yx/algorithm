@@ -1,32 +1,30 @@
 package sort
 
-import "fmt"
-
 const N = 1e6 + 10
 
-func main() {
-
-	q := make([]int, N)
-	var n int
-	_, err := fmt.Scanf("%d", &n)
-	if err != nil {
-		return
-	}
-
-	for i := 0; i < n; i++ {
-		_, err = fmt.Scanf("%d", &q[i])
-		if err != nil {
-			return
-		}
-	}
-
-	quickSort(q, 0, n-1)
-
-	for i := 0; i < n; i++ {
-		fmt.Printf("%d ", q[i])
-	}
-
-}
+//func main() {
+//
+//	q := make([]int, N)
+//	var n int
+//	_, err := fmt.Scanf("%d", &n)
+//	if err != nil {
+//		return
+//	}
+//
+//	for i := 0; i < n; i++ {
+//		_, err = fmt.Scanf("%d", &q[i])
+//		if err != nil {
+//			return
+//		}
+//	}
+//
+//	quickSort(q, 0, n-1)
+//
+//	for i := 0; i < n; i++ {
+//		fmt.Printf("%d ", q[i])
+//	}
+//
+//}
 
 func quickSort(q []int, l, r int) []int {
 

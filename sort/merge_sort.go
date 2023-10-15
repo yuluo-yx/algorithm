@@ -1,7 +1,5 @@
 package sort
 
-import "fmt"
-
 var n int
 
 // 用于排序合并时的临时数组
@@ -11,30 +9,30 @@ func init() {
 	t = make([]int, N)
 }
 
-func main() {
-
-	_, err := fmt.Scanf("%d", &n)
-	if err != nil {
-		return
-	}
-
-	// 数字序列数组
-	q := make([]int, N)
-
-	for i := 0; i < n; i++ {
-		_, err2 := fmt.Scanf("%d", &q[i])
-		if err2 != nil {
-			return
-		}
-	}
-
-	sorted := mergeSort(q, t, 0, n-1)
-
-	for i := 0; i < n; i++ {
-		fmt.Printf("%d ", sorted[i])
-	}
-
-}
+//func main() {
+//
+//	_, err := fmt.Scanf("%d", &n)
+//	if err != nil {
+//		return
+//	}
+//
+//	// 数字序列数组
+//	q := make([]int, N)
+//
+//	for i := 0; i < n; i++ {
+//		_, err2 := fmt.Scanf("%d", &q[i])
+//		if err2 != nil {
+//			return
+//		}
+//	}
+//
+//	sorted := mergeSort(q, t, 0, n-1)
+//
+//	for i := 0; i < n; i++ {
+//		fmt.Printf("%d ", sorted[i])
+//	}
+//
+//}
 
 func mergeSort(q, t []int, l, r int) []int {
 
