@@ -1,13 +1,13 @@
 package sort
 
-var n int
-
-// 用于排序合并时的临时数组
-var t []int
-
-func init() {
-	t = make([]int, N)
-}
+//var n int
+//
+//// 用于排序合并时的临时数组
+//var t []int
+//
+//func init() {
+//	t = make([]int, N)
+//}
 
 //func main() {
 //
