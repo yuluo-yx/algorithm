@@ -5,11 +5,11 @@ import (
 	"testing"
 )
 
-func TestQuickSort(t *testing.T) {
+func TestMergeSort(t *testing.T) {
 
 	for _, test := range sortTestsData {
 		t.Run(test.name, func(t *testing.T) {
-			actual := quickSort(test.input, 0, len(test.input)-1)
+			actual := mergeSort(test.input, make([]int, N), 0, len(test.input)-1)
 			expected := reflect.DeepEqual(actual, test.expected)
 
 			if !expected {
