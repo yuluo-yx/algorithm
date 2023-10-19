@@ -66,27 +66,27 @@ const N int = 7 + 5
 //
 //}
 
-func dfs(u, n int) (res [][]int) {
-
-	path := make([]int, N)
-	status := make([]bool, N)
-
-	// 递归出口，当 u == n 的时候，就是最后一个叶子节点
-	if u == n {
-		return res
-	}
-
-	// 找到一个没有用过的点
-	for i := 1; i <= n; i++ {
-		if status[i] != true {
-			path[u] = i
-			status[i] = true
-			// 递归下一层
-			dfs(u+1, n)
-			// 恢复现场
-			status[i] = false
-		}
-	}
-
-	return res
-}
+//func dfs(u, n int) (res [][]int) {
+//
+//	path := make([]int, N)
+//	status := make([]bool, N)
+//
+//	// 递归出口，当 u == n 的时候，就是最后一个叶子节点
+//	if u == n {
+//		return res
+//	}
+//
+//	// 找到一个没有用过的点
+//	for i := 1; i <= n; i++ {
+//		if status[i] != true {
+//			path[u] = i
+//			status[i] = true
+//			// 递归下一层
+//			dfs(u+1, n)
+//			// 恢复现场
+//			status[i] = false
+//		}
+//	}
+//
+//	return res
+//}
