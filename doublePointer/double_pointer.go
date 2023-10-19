@@ -1,5 +1,5 @@
-//package doublePointer
-//
+package doublePointer
+
 //import "fmt"
 //
 //const N int = 1e5 + 10
