@@ -29,10 +29,8 @@ func isPalindrome(x int) bool {
 
 // isEven 判断是否偶数
 func isEven(num int) bool {
-	if num%2 == 0 {
-		return true
-	}
-	return false
+
+	return num%2 == 0
 }
 
 // Reverse 反转字符串

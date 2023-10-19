@@ -37,11 +37,7 @@ public class IsPalindrome9 {
 
 	private static boolean isEven(int a) {
 
-		if (a % 2 == 0) {
-		    return true;
-		}
-
-		return false;
+		return a % 2 == 0;
 	}
 
 }
