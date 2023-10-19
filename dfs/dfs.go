@@ -1,7 +1,5 @@
 package dfs
 
-import "fmt"
-
 // dfs 模板
 // int dfs(int u)
 // {
@@ -16,32 +14,32 @@ import "fmt"
 
 const N int = 7 + 5
 
-var (
-	n int
-	//	// 恢复现场
-	//	path []int
-	//	// 状态数组，记录已经使用过的数字
-	//	status []bool
-)
+//var (
+//	n int
+//	// 恢复现场
+//	path []int
+//	// 状态数组，记录已经使用过的数字
+//	status []bool
+//)
 
 //	func init() {
 //		path = make([]int, N)
 //		status = make([]bool, N)
 //	}
-func main() {
-
-	_, err := fmt.Scanf("%d", &n)
-	if err != nil {
-		return
-	}
-
-	// 以任意位置开始遍历
-	res := dfs(0, n)
-	for i := range res {
-		fmt.Println(i)
-	}
-
-}
+//func main() {
+//
+//	_, err := fmt.Scanf("%d", &n)
+//	if err != nil {
+//		return
+//	}
+//
+//	// 以任意位置开始遍历
+//	res := dfs(0, n)
+//	for i := range res {
+//		fmt.Println(i)
+//	}
+//
+//}
 
 //
 //func dfs(u int) {
