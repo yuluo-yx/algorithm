@@ -1,4 +1,4 @@
-package indi.yuluo.algorithm.diference;
+package indi.yuluo.algorithm.difference;
 
 /**
  * @author yuluo
