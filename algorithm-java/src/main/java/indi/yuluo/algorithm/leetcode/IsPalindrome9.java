@@ -5,6 +5,7 @@ import java.util.Objects;
 /**
  * @author yuluo
  * @author 1481556636@qq.com
+ * 为数字
  */
 
 public class IsPalindrome9 {
