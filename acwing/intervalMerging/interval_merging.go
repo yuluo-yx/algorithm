@@ -1,5 +1,5 @@
-//package intervalMerging
-//
+package intervalMerging
+
 //import (
 //	"bufio"
 //	"fmt"
